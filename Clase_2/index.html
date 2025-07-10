@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodo POST</title>
+</head>
+<body>
+    <h1>Crear nuevo Usuario</h1>
+    <p>Pagina de prueba para crear un usuario por medio de metodo POST</p>
+
+
+    <form id="userForm">
+        <label for="name">Nombre:</label>
+        <input type="text" name="name" id="name" required>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        <br>
+
+        <label for="age">Edad:</label>
+        <input type="number" name="age" id="age" max="100" min="18" required>
+        <br>
+
+        <button type="submit">Crear Usuario</button>
+    </form>
+
+    <div id="messageDiv"></div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
