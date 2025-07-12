@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar / Eliminar</title>
+</head>
+<body>
+    <h1>Editar o Eliminar Tareas</h1>
+
+    <form id="formEdit">
+        <label for="title">Titulo:</label>
+        <input type="text" id="title" name="title" required>
+        <br>
+
+        <label for="description">Descripción:</label>
+        <input type="text" id="description" name="description" required>
+        <br>
+
+        <label for="identicador">ID:</label>
+        <input type="text" name="identicador" id="identicador">
+
+        <button type="submit">Editar</button>
+    </form>
+
+    <div id="message"></div>
+    <div id="notas"></div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
