@@ -77,12 +77,64 @@ async function createUser(user) {
 
 ---
 
+### Clase 3: Actualización y Eliminación de Datos (PUT/DELETE)
+**📁 Carpeta:** `Clase_3/`
+
+En la tercera clase completamos el CRUD implementando los métodos PUT (actualizar) y DELETE (eliminar):
+
+#### 🎯 Objetivos
+- Implementar peticiones PUT para actualizar datos existentes
+- Implementar peticiones DELETE para eliminar registros
+- Mostrar datos dinámicamente con GET
+- Confirmar acciones destructivas con el usuario
+- Completar el ciclo completo de operaciones CRUD
+
+#### 🛠️ Tecnologías Utilizadas
+- **HTML5** - Formulario para edición y lista de tareas
+- **JavaScript ES8** - Async/await y CRUD completo
+- **MockAPI** - API REST para gestión de notas/tareas
+
+#### 📄 Ejemplo Práctico
+Gestión completa de tareas con todas las operaciones CRUD:
+
+**Actualizar tarea (PUT):**
+```javascript
+async function editarTarea(e) {
+  const notaActualizada = { title, body, id };
+  await fetch(`${API_URL}/${id}`, {
+    method: "PUT",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify(notaActualizada)
+  });
+}
+```
+
+**Eliminar tarea (DELETE):**
+```javascript
+async function eliminar(id) {
+  const confirmar = confirm("¿Estás seguro de eliminar esta tarea?");
+  if (confirmar) {
+    await fetch(`${API_URL}/${id}`, { method: "DELETE" });
+  }
+}
+```
+
+#### 🎨 Características
+- Listado dinámico de todas las tareas
+- Formulario para editar tareas existentes
+- Botón de eliminar con confirmación
+- Actualización automática de la lista tras cambios
+- Operaciones CRUD completas (Create, Read, Update, Delete)
+
+---
+
 ## 🚀 Cómo Ejecutar
 
 1. Clona este repositorio
 2. Abre cada carpeta de clase en tu navegador
 3. Para **Clase_1**: Abre `index.html` y verás los personajes de Rick and Morty
 4. Para **Clase_2**: Abre `index.html` y prueba crear un usuario
+5. Para **Clase_3**: Abre `index.html` para gestionar tareas (editar/eliminar)
 
 ## 🛠️ Requisitos
 - Navegador web moderno
@@ -103,6 +155,13 @@ async function createUser(user) {
 - ✅ Validación de formularios
 - ✅ Manejo avanzado de errores
 - ✅ MockAPI como backend simulado
+
+### Clase 3
+- ✅ Peticiones PUT (actualizar datos)
+- ✅ Peticiones DELETE (eliminar datos)
+- ✅ CRUD completo (Create, Read, Update, Delete)
+- ✅ Confirmación de acciones destructivas
+- ✅ Actualización dinámica del DOM
 
 ---
 
