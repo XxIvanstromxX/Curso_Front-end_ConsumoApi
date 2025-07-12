@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".././styles/home.css">
+    <title>Inicio</title>
+</head>
+<body>
+    <header>
+        <h1>Compumundohipermegared</h1>
+    </header>
+
+    <main>
+        <h2>Bienvenido a Compumundohipermegared</h2>
+        
+        <form>
+            <h3>Crea una nota</h3>
+            <input type="text" name="title" id="title" placeholder="Título de la nota" required>
+            <textarea name="content" id="content" placeholder="Contenido de la nota" required></textarea>
+            <button type="submit">Crear Nota</button>
+            <div id="messageDiv"></div>
+        </form>
+
+        <div class="notas">
+            <h3>Tus Notas</h3>
+            <ul id="lista-notas">
+                <!-- Las notas se mostrarán aquí -->
+            </ul>
+        </div>
+
+        <button id="logout">Cerrar Sesión</button>
+
+        <script src="../controllers/home.js"></script>
+    </main>
+</body>
+</html>
