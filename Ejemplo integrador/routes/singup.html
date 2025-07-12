@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".././styles/singup.css">
+    <title>Crea Cuenta</title>
+</head>
+<body>
+    <header>
+        <h1>Compumundohipermegared</h1>
+    </header>
+
+    <main>
+        <form id="signupForm">
+            <h2>Crear Cuenta</h2>
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" id="name" required placeholder="Tu nombre completo">
+            <br>
+
+            <label for="age">Edad:</label>
+            <input type="number" name="age" id="age" required placeholder="Tu edad">
+            <br>
+
+            <label for="newUser">Correo:</label>
+            <input type="email" name="newUser" id="newUser" required placeholder="example@email.com">
+            <br>
+
+            <label for="newPassword">Contraseña:</label>
+            <input type="password" name="newPassword" id="newPassword" required placeholder="example123">
+            <br>
+
+            <button type="submit">Registrar</button>
+            <div class="messageDiv"></div>
+        </form>
+
+        <button id="backToLogin">Volver al Login</button>
+        <script src="../controllers/createUser.js"></script>
+    </main>
+</body>
+</html>
